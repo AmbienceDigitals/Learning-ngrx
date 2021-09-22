@@ -4,7 +4,7 @@
       "name": "John Doe",
       "phone": "909988798789",
       "address": "123, Sun Street",
-      "membership": "Platinum",
+      "membership": "Pro",
       "id": 1
     },
     {
@@ -13,6 +13,20 @@
       "address": "893 Main Voulevard",
       "membership": "Pro",
       "id": 2
+    },
+    {
+      "name": "Ezekiel Ayano",
+      "phone": "08105837558",
+      "address": "iyana ilogbo",
+      "membership": "Platinum",
+      "id": 3
+    },
+    {
+      "name": "Ezekiel Ayano",
+      "phone": "08105837558",
+      "address": "iyana ilogbo",
+      "membership": "Pro",
+      "id": 4
     }
   ]
 }

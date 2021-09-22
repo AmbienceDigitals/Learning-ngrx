@@ -61,6 +61,11 @@ export class CustomerEditComponent implements OnInit {
 
     // dispatching action to update customer using the values of customerForm
     this.store.dispatch(new customerAction.UpdateCustomer(updatedCustomer));
+
+    setTimeout(() => {
+        window.location.reload();
+    }, 500);
+
   }
 
 }

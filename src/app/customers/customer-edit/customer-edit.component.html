@@ -1,32 +1,32 @@
 <div class="mt-4">
-<h3>Edit Customer</h3>
-    <form [formGroup]="customerForm" (submit)="updateCustomer()" class="form-inline mb-4">
-
-    <label class="sr-only" for="Name">Name</label>
-    <div class="input-group mb-2 mr-sm-2">
-    <input type="text" class="form-control" formControlName="name" placeholder="name">
+    <h3>Add Customer</h3>
+    <form [formGroup]="customerForm" (submit)="updateCustomer()" class="row gy-2 gx-3 align-items-center">
+        <div class="col-auto">
+            <label for="Name">Name</label>
+            <input type="text" class="form-control" formControlName="name" placeholder="name" id="autoSizingInput">
+            </div>
+        <div class="col-auto">
+            <label for="Phone">Phone</label>
+            <div class="input-group">
+            <input type="text" class="form-control" formControlName="phone" placeholder="phone" id="autoSizingInputGroup">
+            </div>
+        </div>
+        <div class="col-auto">
+            <label for="Address">Address</label>
+            <div class="input-group">
+            <input type="text" class="form-control" formControlName="address" placeholder="address" id="autoSizingInputGroup">
+            </div>
+        </div>
+    <div class="col-auto">
+        <label  for="membership">Membership</label>
+        <select class="form-select" formControlName="membership" id="autoSizingSelect">
+        <option value="Basic">Basic</option>
+        <option value="Pro">Pro</option>
+        <option value="Platinum">Platinum</option>
+        </select>
     </div>
-
-    <label class="sr-only" for="Phone">Phone</label>
-    <div class="input-group mb-2 mr-sm-2">
-    <input type="text" class="form-control" formControlName="phone" placeholder="Phone">
+    <div class="col-auto">
+        <button type="submit" class="btn btn-primary">Update Customer</button>
     </div>
-
-    <label class="sr-only" for="Address">Address</label>
-    <div class="input-group mb-2 mr-sm-2">
-    <input type="text" class="form-control" formControlName="address" placeholder="Address">
-    </div>
-
-    <label class="sr-only" for="membership">Membership</label>
-    <div class="input-group mb-2 mr-sm-2">
-    <select formControlName="membership" class="form-control">
-        <option>Basic</option>
-        <option>Pro</option>
-        <option>Platinum</option>
-    </select>
-    </div>
-
-    <button type="submit" class="btn btn-primary mb-2">Update Customer</button>
-
-</form>
+    </form>
 </div>
